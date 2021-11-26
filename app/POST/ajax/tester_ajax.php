@@ -8,7 +8,8 @@ if($cmd == 'tester_shop_ajax'){
 }
 
 if($cmd == 'test_get_json'){
-    $encodedPOST = json_encode('test');
+    $data = json_decode($_POST['json']);
+    $encodedPOST = json_encode($_POST);
     echo $encodedPOST;
 }
 

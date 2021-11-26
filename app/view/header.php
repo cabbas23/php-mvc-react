@@ -19,11 +19,11 @@
         <script src="<?=BASE_URL?>resources/js/ajax.js"></script>
 
         <!-- React -->
-        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+        <script src='<?=BASE_URL?>resources/js/react.min.js' type='text/javascript'></script>
+        <script src='<?=BASE_URL?>resources/js/react-dom.min.js' type='text/javascript'></script>
 
         <!-- jQuery -->
-        <script src='<?=BASE_URL?>resources/js/jquery.min.js' type='text/javascript'  ></script>
+        <script src='<?=BASE_URL?>resources/js/jquery.min.js' type='text/javascript'></script>
 
         <!-- Page Title -->
         <title>PHP MVC React - <?=$pageTitle?></title>

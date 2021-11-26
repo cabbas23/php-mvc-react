@@ -9,8 +9,9 @@ if (session_status() === PHP_SESSION_NONE) {
 
 // PDO Database Class / Connection
 function get_db(){
-    require_once '../DATABASE/pdo_db.class.php';
-    $db = new db();
+    /* require_once '../DATABASE/pdo_db.class.php';
+    $db = new db(); */
+    $db = 'test';
     return $db;
 }
 function get_main_model($db){

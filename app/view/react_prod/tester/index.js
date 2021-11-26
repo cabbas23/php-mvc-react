@@ -16,15 +16,17 @@ function Tester(props) {
         React.createElement(
             "div",
             { className: "row" },
-            React.createElement(
-                "div",
-                { className: "col-sm-4" },
-                React.createElement(Card, {
-                    titleTxt: "test",
-                    bodyTxt: "this is a test",
-                    mvc: "tester"
-                })
-            )
+            testData.map(function (item, key) {
+                return React.createElement(
+                    "div",
+                    { className: "col-sm-4 mb-4" },
+                    React.createElement(Card, {
+                        cardKey: key,
+                        bodyTxt: item.title,
+                        mvc: "tester"
+                    })
+                );
+            })
         )
     );
 }

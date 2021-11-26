@@ -7,13 +7,19 @@ function Tester(props) {
                 <h1>This View is 100% react content.</h1>
             </div>
             <div className="row">
-                <div className="col-sm-4">
-                    <Card 
-                        titleTxt="test" 
-                        bodyTxt="this is a test" 
-                        mvc="tester"
-                    />
-                </div>
+                {
+                    testData.map((item, key) => {
+                        return(
+                            <div className="col-sm-4 mb-4">
+                                <Card 
+                                    cardKey={key} 
+                                    bodyTxt={item.title}
+                                    mvc="tester"
+                                />
+                            </div>
+                        )
+                    })
+                }
             </div>
         </div>
     );
