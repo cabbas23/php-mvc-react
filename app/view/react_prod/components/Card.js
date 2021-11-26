@@ -9,40 +9,30 @@ function Card(props) {
         alert(JSON.stringify(testConsole));
     };
 
-    var oddItem = '';
-    if (isOdd(props.cardKey)) {
-        oddItem = React.createElement(
-            'p',
-            null,
-            'This Key IS odd!'
-        );
-    }
-
     return React.createElement(
-        'div',
-        { className: 'card' },
-        React.createElement('img', { src: 'https://mdbootstrap.com/img/new/standard/nature/111.jpg', load: 'lazy', className: 'card-img-top', alt: '...' }),
+        "div",
+        { className: "card" },
+        React.createElement("img", { src: "https://mdbootstrap.com/img/new/standard/nature/111.jpg", load: "lazy", className: "card-img-top", alt: "..." }),
         React.createElement(
-            'div',
-            { className: 'card-body' },
+            "div",
+            { className: "card-body" },
             React.createElement(
-                'h5',
-                { className: 'card-title' },
-                'Card: ',
+                "h5",
+                { className: "card-title" },
+                "Card: ",
                 props.cardKey
             ),
             React.createElement(
-                'p',
-                { className: 'card-text' },
+                "p",
+                { className: "card-text" },
                 props.bodyTxt
             ),
-            oddItem,
             React.createElement(
-                'button',
-                { className: 'btn btn-primary test-btn test', onClick: function onClick() {
+                "button",
+                { className: "btn btn-primary test-btn test", onClick: function onClick() {
                         btnCLicked(props.cardKey, props.mvc);
                     } },
-                'AJAX test'
+                "AJAX test"
             )
         )
     );
