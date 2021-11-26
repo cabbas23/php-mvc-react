@@ -1,8 +1,7 @@
-function isOdd(num) { return num % 2;}
 
 function Card(props){
 
-    var btnCLicked = (data, mvc) =>{
+    function btnCLicked(data, mvc){
         var testConsole = ajaxGetJSON('test_get_json', JSON.stringify(data), mvc);
         alert(JSON.stringify(testConsole));
     }

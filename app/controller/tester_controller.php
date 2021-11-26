@@ -25,7 +25,7 @@ echo '</pre>'; */
 <script>
     const testData = JSON.parse('<?php echo $testData;?>');
 </script>
-<script type="module" src="app/view/react_prod/<?php echo $mvc; ?>/index.js"></script>
+<script type="module" src="<?=BASE_URL?>app/view/react_prod/<?=$mvc?>/index.js"></script>
 <?php
 include_once("app/view/footer.php");
 ?>

@@ -19,6 +19,10 @@
         <script src="<?=BASE_URL?>resources/js/ajax.js"></script>
 
         <!-- React -->
+        <!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
+        <!-- <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script> -->
         <script src='<?=BASE_URL?>resources/js/react.min.js' type='text/javascript'></script>
         <script src='<?=BASE_URL?>resources/js/react-dom.min.js' type='text/javascript'></script>
 
@@ -29,7 +33,7 @@
         <title>PHP MVC React - <?=$pageTitle?></title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +44,9 @@
                         <a class="nav-link" aria-current="page" href="<?=BASE_URL?>">Home</a>
                         <a class="nav-link" href="<?=BASE_URL?>tester">Tester</a>
                     </div>
+                </div>
+                <div class="d-flex">
+                    <p>test: <span id="counterTest">0</span></p>
                 </div>
             </div>
         </nav>
