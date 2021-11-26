@@ -5,7 +5,7 @@
 $systemStatus;
 if (strpos(__DIR__, 'C:') !== false) {
     $systemStatus = 'LOCAL';
-    $base = "/php-react-mvc/";
+    $base = "/php-mvc-react/";
 } else{
     $systemStatus = 'PROD';
     $base = "";
